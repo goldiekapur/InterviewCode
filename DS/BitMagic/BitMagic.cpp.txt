@@ -1,0 +1,256 @@
+
+void BM_FAQ() //common asked question
+{
+
+}
+
+void BM_practice() //What forget  but important
+{
+
+
+}
+void BM_BitManipulation()
+{
+	//@Next higher number with same number of set bits
+
+	count number of set bits in an (big) array
+	Smallest of 3 integers without comparison
+	implement strcmp that ignores cases 
+	Add 1 to a given number
+	Add two numbers without using arithmetic operators
+	Subtract two numbers without using arithmetic operators 
+	
+	Compute the minimum or maximum of two integers without branching
+	int addOvf(int* result, int a, int b) //Check for Integer Overflow
+	Compute the integer absolute value (abs) without branching
+	Compute modulus division by a power-of-2-number
+	Detect if two integers have opposite signs
+	
+	
+	
+	
+
+}
+
+void BitFun()
+{
+
+	//isolate rightmost/first set bit 		: x & ~(x -1) 	<x & (-x )or x & (~x + 1)>
+	//isolate first unset bit				: ~x & (x + 1) 
+	//Clear rightmost/fisrt set bit			: x & (x -1)
+	//Set the rightmost 0-bit				: x | (x+1)
+	
+	void clearRightmostSetbits(unsigned int x)  {x & (x-1)}
+	void setRightmostClearbits(unsigned int x)  {x | (x+1)}
+			
+	//Turn off/clean
+	//flip/toggle
+	//set/Turn on/swap on
+	//test/check -set bit
+
+	int isEven(int x) { return (x & 1) == 0)}   //Check even or odd.
+	int isPoerOf2(int x) { return (x && !(x & (x - 1)) == 0)} 
+	
+	int clearBit(int x, int index) //Unset  Nth bit
+	int setBit(int x, int index)   //set Nth bit
+	int toggleBit(int x, int index) //Toggle Nth bit
+	int testBit(int x, int index) // test Nth bit
+
+	int clearBits(int x, int startPosition, int numberOfBits)
+	int setBits(int x, int startPosition, int numberOfBits)
+	int toggleBits(int x, int startPosition, int numberOfBits)
+	int testBits(int x, int startPosition, int numberOfBits)
+	
+	int swapBit(int x, int lefPos1, int rightPos2)
+	int swapBits(int x, int lefPos1, int rightPos2, int numberOfBits)
+
+    int swapOddEvenBits(int x)
+	void swapNumberwithoutTemp(unsigned int x, unsigned int y)
+
+	
+	unsigned int countTotalSetBits1ToN( int n) //in all numbers from 1 to n
+	unsigned int countBitsTobeFlipped2convert(unsigned int A, unsigned int B)
+	unsigned int countSetbits(unsigned int n)
+	unsigned int computeParity(unsigned int n)
+
+	//FFS: find first set (index of rightmost set bit <least significant>)
+	//CTZ (NTZ) :count trailing zeros: counts number of zero bits following FFS
+	//complementary of finds index/position of the most significant set bit (log base 2)
+
+	int findIndexOnlysetBit(int x)
+	int positionOfRightmostSetbit( int x) // index of LSB set bit 
+	int nextPowerOf2(int x)
+	
+
+	int rotateLeft(int n)
+	int rotateRight(int n)
+	//Bit Rotation (or circular shift) fall off at one end are put back to the other end.
+
+	
+	void printBinaryRepresentation(int x)
+	bool isBinaryepResentationPalindrome(int n)
+	int  reverseBits(int n)
+
+}
+
+void Endian()
+{
+	Little and Big Endian Mystery
+
+	//nible8, short16, int32, long64 
+	Endian converSion
+	Swap two nibbles in a byte
+	find Endian of machine
+}
+
+
+void BitMath()
+{
+
+	int multiplyBy3_5(unsigned int n)
+	int multiplyBy7(unsigned int n)
+
+	int devideBy2(unsigned int n)
+	int multiplyBy2(unsigned int n)
+
+
+	Calculate square of a number without using *, / and pow()
+
+	unsigned int isMultiple3(unsigned int n)
+	unsigned int isMultiple9(unsigned int n)
+	unsigned int isPoweOf4(unsigned int n)
+}
+
+void findArrayUsingXor()
+{
+	int FindOddNumberOfTimes(int *a, int n) //Xor all
+	Find the 2 non-repeating elements in an array
+	Find the element that appears once 
+			Given an array where every element occurs three times, except one element which occurs only once.
+
+}
+
+vod BM_NewSet()
+{
+	Find XOR of two number without using XOR operator
+	Sum of bit differences among all pairs
+
+	Find n’th Magic Number July 5, 2015
+		A magic number is defined as a number which can be expressed as a power of 5 or sum of unique powers of 5. 
+		First few magic numbers are 5, 25, 30(5 + 25), 125, 130(125 + 5), ….
+	
+	Euclid’s Algorithm when % and / operations are costly September 13, 2015
+		Euclid’s algorithm is used to find GCD of two numbers. There are mainly two versions of algorithm. 
+		Version 1 (Using subtraction) Version 2 (Using modulo operator) Which of the above two is more efficient? 
+		Version 1 can take linear time to find the GCD, 
+		
+	Check if a given number is sparse or not September 14, 2015
+		A number is said to be a sparse number if in binary representation of the number no two 
+		or more consecutive bits are set. Write a function to check if a given number is Sparse or not.
+	
+	Find the maximum subarray XOR in a given array October 31, 2015
+		Given an array of integers. find the maximum XOR subarray value in given array. 
+		Expected time complexity O(n). Examples: Input: arr[] = {1, 2, 3, 4} Output: 7 
+		The subarray {3, 4} has maximum XOR value Input: arr[] = {8, 1, 2, 12, 7, 6} Output: 15 The subarray {1, 2, 12} has maximum XOR… Read More »
+	
+	Find Next Sparse Number November 4, 2015
+		A number is Sparse if there are no two adjacent 1s in its binary representation. 
+		For example 5 (binary representation: 101) is sparse, but 6 (binary representation: 110) is not sparse. 
+		Given a number x, find the smallest Sparse number which greater than or equal to x. 
+	
+	Sum of Bitwise And of all pairs in a given array November 25, 2015
+		Given an array “arr[0..n-1]” of integers, calculate sum of “arr[i] & arr[j]” 
+		for all the pairs in the given where i < j. Here & is bitwise AND operator. Expected time complexity is O(n). 
+		Examples: Input: arr[] = {5, 10, 15} Output: 15 
+		
+	Given a set, find XOR of the XOR’s of all subsets. December 27, 2015
+		The question is to find XOR of the XOR’s of all subsets. i.e if the set is {1,2,3}.
+		All subsets are : [{1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}]. 
+		Find the XOR of each of the subset and then find the XOR of every subset result. 
+		
+	Find the maximum subset XOR of a given set January 27, 2016
+		Given an set of positive integers. find the maximum XOR subset value in the given set. 
+		Expected time complexity O(n).
+	
+	Gray to Binary and Binary to Gray conversion February 21, 2016
+		Binary Numbers is default way to store numbers, but in many applications binary numbers are difficult to use and a variation of binary numbers is needed. This is where Gray codes are very useful. Gray code has property that two successive numbers differ in only one bit because of this property gray code does the… Read More »
+	
+	
+	Count strings with consecutive 1’s April 29, 2016
+		Given a number n, count number of n length strings with consecutive 1’s in them. 
+		Examples: Input : n = 2 Output : 1 There are 4 strings of length 2, the strings are 00, 01, 10 and 11.
+		Only the string 11 has consecutive 1’s. Input : n = 3 Output : 3 
+
+}
+
+void OtherpracticeSet2()
+{
+
+	Calculate 7n/8 without using division and multiplication operators
+		Given an integer, write a function that calculates ?7n/8? (ceiling of 7n/8) 
+		without using division and multiplication operators.
+
+	Generate n-bit Gray Codes
+
+
+	Optimization Techniques | Set 1 (Modulus)
+
+	A Boolean Array Puzzle
+
+	Add two bit strings
+			Given two bit sequences as strings, write a function to return the addition of the two sequences. 
+			Bit strings can be of different lengths also. 
+
+}
+
+void BM_CTCI_BOOK()
+{
+
+}
+
+
+void BM_EPI_BOOK()
+{
+
+}
+
+void BM_theory_Notes()
+{
+	/*
+	&	-  bitwise and
+	|	-  bitwise or
+	^	-  bitwise xor
+	~	-  bitwise not
+	<<	-  bitwise shift left
+	>>	-  bitwise shift right
+	*/
+
+	
+	//FFS: find first set (index of rightmost set bit <least significant>)
+		
+		//CTZ:count trailing zeros (NTZ: number of trailing zeros) 
+		//counts number of zero bits following FFS
+		
+		//complementary of finds index/position of the most significant set bit (log base 2)
+		
+		CLZ:count leading zeros (NZL: number of leading zeros )
+			counts the number of zero bits preceding the most significant one bit. 
+	
+		//These 4 operations also have negated versions:
+			FFZ:find first zero
+			count trailing ones
+			count leading ones
+			//The operation that finds the index of the most significant zero bit
+			//which is a rounded version of the binary logarithm.
+	
+		FFS use case: bit array can be used to implement a priority queue. 
+			In this context, find first set (ffs) is useful in implementing the "pop" or 
+			"pull highest priority element" operation efficiently. The Linux kernel real-time scheduler
+			internally uses sched_find_first_bit() for this purpose.
+			
+	
+	//Masks:
+		A mask is data that is used for bitwise operations, particularly in a bit field.
+		Using a mask, multiple bits in a Byte, nibble, word (etc.) can be set either on, off or 
+			inverted from on to off (or vice versa) in a single bitwise operation.
+}

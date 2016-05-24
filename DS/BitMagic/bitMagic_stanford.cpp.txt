@@ -1,0 +1,186 @@
+
+
+
+void bitTwiddling_Topic()
+{
+
+	common
+		
+	signExtending
+	countSetBits
+	computeParity
+	
+	swapValues
+	reverseBitSequences
+	computeRemainder
+	index_highestBitSet//log base2
+	findIndex_of_TrailingZero
+	nextPowerOf2
+	interLeavingBits
+	counteMatchfound
+	getNextBitPermutation
+		
+
+}
+
+
+voud bitTwiddlingHacks_Stanford() //by Sean Eron Anderson
+{
+
+
+	conditionallySetClearBitsWithoutBranching(int x)
+	{
+
+	}
+		
+	
+	Conditionally negate a value without branching
+
+	Merge bits from two values according to a mask
+
+	
+	int getAbsWithoutBranching(int x)
+	
+	int getMaxWithoutBranching(int x, int y) //Compute
+	int getMinWithoutBranching(int x, int y)
+	bool isPowerOfTwo(int x) { return  x && !(x & (x - 1)); } 
+
+}
+
+
+void signExtending()
+{
+	Sign extending from a constant bit-width
+	Sign extending from a variable bit-width
+	Sign extending from a variable bit-width in 3 operations
+
+}
+
+int  countSetBits(int x) 
+{
+	Counting bits set, naive way
+	Counting bits set by lookup table //lookup: 	
+	Counting bits set, Brian Kernighan way
+	
+	//Counting bits set in 14, 24, or 32-bit words using 64-bit instructions
+	//Counting bits set, in parallel
+	//Count bits set (rank) from the most-significant bit upto a given position
+	//Select the bit position (from the most-significant bit) with the given count (rank)
+
+}
+
+void computeParity() //returns 1 if an odd number of bits set
+{
+
+	Compute parity of a word the naive way
+	Compute parity by lookup table //lookup table
+	
+	//Compute parity of a byte using 64-bit multiply and modulus division
+	//Compute parity of word with a multiply
+	//Compute parity in parallel
+
+
+}
+
+void swapValues()
+{
+
+	//Swapping values with subtraction and addition
+	Swapping values with XOR
+
+	Swapping individual bit with XOR
+	Swapping individual bits with XOR
+
+}
+
+void reverseBit()
+{
+
+	Reverse bits the obvious way
+	Reverse bits in word by lookup table //lookup table
+	
+	//Reverse the bits in a byte with 3 operations (64-bit multiply and modulus division)
+	//Reverse the bits in a byte with 4 operations (64-bit multiply, no division)
+	//Reverse the bits in a byte with 7 operations (no 64-bit, only 32)
+	//Reverse an N-bit quantity in parallel with 5 * lg(N) operations
+
+}
+
+void computeRemainder()  // aka Modulus division
+{
+
+	Computing modulus division by 1 << s without a division operation (obvious)
+	Computing modulus division by (1 << s) - 1 without a division operation
+	//Computing modulus division by (1 << s) - 1 in parallel without a division operation
+
+}
+
+void index_highestBitSet() //aka  logbase 2,  FFZ, FFS opposite
+{
+
+	Find the log base 2 of an integer with the MSB N set in O(N) operations (the obvious way)
+	Find the integer log base 2 of an integer with an 64-bit IEEE float
+
+	Find the log base 2 of an integer with a lookup table //lookup table
+	
+	Find the log base 2 of an N-bit integer in O(lg(N)) operations
+
+	Find the log base 2 of an N-bit integer in O(lg(N)) operations with multiply and lookup //lookup table
+	
+
+
+	Find integer log base 10 of an integer
+	Find integer log base 10 of an integer the obvious way
+	Find integer log base 2 of a 32-bit IEEE float
+	Find integer log base 2 of the pow(2, r)-root of a 32-bit IEEE float (for unsigned integer r)
+
+}
+
+void findIndex_of_TrailingZero() //Counting consecutive trailing zero bits //FFS or CLZ 
+{
+	Count the consecutive zero bits (trailing) on the right linearly
+	Count the consecutive zero bits (trailing) on the right in parallel
+	Count the consecutive zero bits (trailing) on the right by binary search
+
+	//Count the consecutive zero bits (trailing) on the right by casting to a float
+	//Count the consecutive zero bits (trailing) on the right with modulus division and lookup //lookup table
+	//Count the consecutive zero bits (trailing) on the right with multiply and lookup
+
+}
+
+
+void nextPowerOf2()
+{
+	//Round up to the next highest power of 2 by float casting
+	Round up to the next highest power of 2
+
+}
+
+void interLeavingBits() //aka compute Morton Numbers
+{
+
+	Interleave bits the obvious way
+	Interleave bits by table lookup //lookup table
+	
+	//Interleave bits with 64-bit multiply
+	//Interleave bits by Binary Magic Numbers
+}
+
+void counteMatchfound() //Testing for ranges of bytes in a word 
+{
+
+	Determine if a word has a zero byte
+	Determine if a word has a byte equal to n
+	Determine if a word has byte less than n
+	Determine if a word has a byte greater than n
+	Determine if a word has a byte between m and n
+
+}
+
+void getNextBitPermutation()
+{
+
+	Compute the lexicographically next bit permutation
+
+}
+

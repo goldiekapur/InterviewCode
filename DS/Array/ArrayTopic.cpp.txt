@@ -1,0 +1,915 @@
+
+
+void AR_Pratice()
+{
+	// ArraysHash,hash/count Array, xor & math, same array as insex & abs, count sort
+	// 2 index scan, dutch national flag
+	// linear scan binary scan & Modified binary scan
+	//BST
+	//slection, heap
+	//merge
+	//revserse, rotate
+
+	heapsort()
+	minHeap()
+
+	randomQuickSort()
+	randomQuickSelection()
+}
+
+
+void search_orderedSet_Modified_binarySearch() 
+{
+	//D/C alog type -> log(n)
+	
+	//find/search/get
+
+
+	
+	0) Binary Search -iterative and recursive
+	1)get first occurance of key
+	2)get last occurance of key
+	3)Count number of occurrences of key(Frequency of key, duplicates in sorted)
+	
+	4)find  pivot key in sorted & pivoted array
+		Find the max key in an array first increasing and then decreasing
+		
+
+	5)find key in sorted & pivoted array
+		- Bitonic array
+		- cyclical array
+		- sorted rotaed
+		- first increasing then decrsing/vice versa
+	
+		
+	6) find floor & ceiling of key in sorted array
+
+	7) Count 1s in ( sorted binary array) 11...000... lenth  known/ lenth not known in advanace
+	115.	Count 1s in a  
+	8) find index of i ==a[i] in sorted array
+		Find a Fixed Point in a given array		
+	
+	9) find pair Sum == K in abs  sorted array
+	10) EPI-1
+	11) EPI-2
+	13) find kth smalest of 2 sorted array
+	14)seach key in sorted 2D/matix
+	15)find winner & runner
+
+	
+	16) find Even & Odd sorted array
+
+	32. Equilibrium index of an array
+	
+	//---------------------------------------------------------------
+	
+	Find the smallest missing number
+		Given a sorted array of n integers where each integer is in the range from 0 to m-1 and m > n.
+		Find the smallest number that is missing from the array.
+
+	Maximum Length Bitonic Subarray
+	30. Find the Minimum length Unsorted Subarray, sorting which makes the complete array sorted
+	48. Maximum Length Bitonic Subarray
+	
+}
+
+void Selection()
+{
+	//Selection_heap_quick_pivit_Median_online_stream
+
+	
+	#Max and second max
+	18. Find the smallest and second smallest element in an array
+
+	22. k largest(or smallest) elements in an array | added Min Heap method
+
+ 	#Max & Min
+	20. Maximum and minimum of an array using minimum number of comparisons 
+
+	109.	Kth Smallest/Largest Element in Unsorted Array
+	110.	Kth Smallest/Largest Element in Unsorted Array in Expected Linear Time
+	111.	Kth Smallest/Largest Element in Unsorted Array in Worst Case Linear Time
+	
+	93. Given an array of of size n and a number k, find all elements that appear more than n/k times
+	
+	98. Merge k sorted arrays | Set 1
+	70. Sort a nearly sorted (or K sorted) array
+
+	#Medium
+	46. Median in a stream of integers (running integers)	
+	73. Median of two sorted arrays of different sizes	
+	8.	Median of two sorted arrays
+	8.	Median of arrays
+
+	RadomQuickSelection
+}
+
+void two_index_seaarch()
+{
+	//two index sort //dutch national flag
+	
+	check for pair in a[] with sum as K <2 scan, sort then one scan 2  using index left & right, HashIdex>
+
+	21. Segregate 0s and 1s in an array
+	27. Segregate Even and Odd numbers
+	29. Sort an array of 0s, 1s and 2s
+	100. Move all zeroes to end of array
+	89. Rearrange positive and negative numbers in O(n) time and O(1) extra space
+	
+}
+
+void search_UnorderedSet() 
+{
+
+	Majority Element(more than n/2 times)[ 2 scan, BlancedBST<Freq>, Hash, Sort, Moore Voting Algo]
+	Check for Majority Element in a sorted array
+	Find the maximum repeating number in O(n) time and O(1) extra space
+	Count frequencies of all elements in array in O(1) extra space and O(n) time
+		
+	Leaders in an array
+	A Product Array Puzzle
+	Replace every element with the greatest element on right side
+	
+	
+	2.	Majority Element
+	19. Check for Majority Element in a sorted array
+	14. Leaders in an array
+	36. Next Greater Element
+	77. Find the number of islands
+	116.	Print All Distinct Elements of a given integer array
+	
+	119.	Find the first repeating element in an array of integers
+	87. Find the maximum repeating number in O(n) time and O(1) extra space
+	
+	118.	Find common elements in three sorted arrays
+	68. Find four elements that sum to a given value | Set 1 (n^3 solution)
+	69. Find four elements that sum to a given value | Set 2 ( O(n^2Logn) Solution)
+	
+	91. Find a peak element
+	50. Count smaller elements on right side	
+	66. Replace every element with the next greatest
+	102.	Count all distinct pairs with difference equal to k
+	107.	Check if a given array contains duplicate elements within k distance from each other
+	113.	Find the closest pair from two sorted arrays
+
+	129.	Given a sorted array and a number x, find the pair in array whose sum is closest to x
+	
+	121.	Rearrange an array such that 'arr[j]' becomes 'i' if 'arr[i]' is 'j'
+	124.	Check if a given array contains duplicate elements within k distance from each other
+	126.	Replace every array element by multiplication of previous and next
+
+	
+	//Rearrange positive and negative numbers in (n) time and (1) extra space
+	//Find the number of zeroes
+	//Rearrange array in alternating positive & negative items with O(1) extra space
+	//Rearrange an array such that ‘arr[j]’ becomes ‘i’ if ‘arr[i]’ is ‘j’
+	//Count pairs with given sum
+
+	//Find lost element from a duplicated array
+	//Find minimum difference between any two elements
+	//Rearrange an array in maximum minimum form
+	
+}
+
+void findNumber_ABS_XOP_MATH_EQ()
+{
+	
+	5.	Find the Missing Number
+	3.	Find the Number Occurring Odd Number of Times	
+	28. Find the two repeating elements in a given array
+	31. Find duplicates in O(n) time and O(1) extra space
+	38. Find the smallest missing number
+	45. Find the repeating and the missing | Added 3 new methods
+	57. Find the smallest positive number missing from an unsorted array
+	58. Find the two numbers with odd occurrences in an unsorted array
+	125.	Find the element that appears once
+	//Print missing elements that lie in range 0 – 99
+}
+
+
+
+void  merge()
+{
+	MergeSort
+	Merge K Sorted Array
+	Merge an array of size n into another array of size m+n
+	Union and Intersection of two sorted arrays
+	Find Union and Intersection of two unsorted arrays
+
+	Merge Overlapping Intervals
+	//Find common elements in three sorted arrays
+	Merge two sorted arrays with O(1) extra space
+
+	
+	16. Count Inversions in an array
+
+}
+	
+void reverse_rotate()
+{
+	void reverse(int* a, intn )
+		
+	Program for array rotation
+	Reversal algorithm for array rotation
+		Write a function rotate(arr[], d, n)
+	Block swap algorithm for array rotation
+	
+	reverse an array/string/Set <Where reverse iterator in present> <Stack>
+	Palindrom check <No Reverse, Read only>
+
+	131.	Online algorithm for checking palindrome in a stream
+}
+
+
+void AR_FAQ()
+{
+
+}
+
+
+void AR_ProblemSolve_Puzzle()
+{
+	120.	Find the smallest positive integer value that cannot be represented as sum of any subset of a given array
+	
+	117.	Construct an array from its pair-sum array
+	75. Count the number of possible triangles
+	94. Find the point where a monotonically increasing function becomes positive first time
+	96. Find the minimum element in a sorted and rotated array
+	61. Find a sorted subsequence of size 3 in linear time
+	
+	130.	Find the largest pair sum in an unsorted array
+	
+	112.	Find Index of 0 to be replaced with 1 to get longest continuous sequence of 1s in a binary array
+	
+	17. Two elements whose sum is closest to zero
+	80. Arrange given numbers to form the biggest number
+	71. Maximum circular subarray sum
+	
+	42. Maximum of all subarrays of size k (Added a O(n) method)
+	43. Find whether an array is subset of another array | Added Method 3
+	62. Largest subarray with equal number of 0s and 1s
+	
+	4.	Largest Sum Contiguous Subarray
+	13. Maximum sum such that no two elements are adjacent
+	23. Maximum difference between two elements
+	26. A Product Array Puzzle
+	37. Check if array elements are consecutive | Added Method 3
+	41. Given an array arr[], find the maximum j - i such that arr[j] > arr[i]
+	44. Find the minimum distance between two numbers
+	51. Minimum number of jumps to reach end
+	52. Implement two stacks in an array
+	53. Find subarray with given sum
+	54. Dynamic Programming | Set 14 (Maximum Sum Increasing Subsequence)
+	55. Longest Monotonically Increasing Subsequence Size (N log N)
+	56. Find a triplet that sum to a given value
+	63. Dynamic Programming | Set 18 (Partition problem)
+	64. Maximum Product Subarray
+	65. Find a pair with the given difference
+	67. Dynamic Programming | Set 20 (Maximum Length Chain of Pairs)
+	59. The Celebrity Problem
+	60. Dynamic Programming | Set 15 (Longest Bitonic Subsequence)
+	74. Shuffle a given array
+	78. Construction of Longest Monotonically Increasing Subsequence (N log N)
+	79. Find the first circular tour that visits all petrol pumps
+	88. Stock Buy Sell to Maximize Profit
+	97. Stable Marriage Problem
+	133.	Pythagorean Triplet in an array
+	134.	Maximum profit by buying and selling a share at most twice
+	83. Tug of War
+	84. Divide and Conquer | Set 3 (Maximum Subarray Sum)
+	86. Merge Overlapping Intervals
+	92. Print all possible combinations of r elements in a given array of size n
+	95. Find the Increasing subsequence of length three with maximum product
+	101.	Find number of pairs such that x^y > y^x
+	104.	Smallest subarray with sum greater than a given value
+	103.	Find if there is a subarray with 0 sum
+	106.	Maximum Sum Path in Two Arrays
+	127.	Check if any two intervals overlap among a given set of intervals
+	128.	Delete an element from array (Using two traversals and one traversal)
+	122.	Find position of an element in a sorted array of infinite numbers
+	
+}
+
+void AR_EIP_BOOK()
+{
+}
+void AR_CTCI_BOOK()
+{
+}
+void AR_MadeEassy_BOOK()
+{
+}
+
+void AR_GEEK_ALL()
+{
+	1.	Given an array A[] and a number x, check for pair in A[] with sum as x
+	2.	Majority Element
+	3.	Find the Number Occurring Odd Number of Times
+	4.	Largest Sum Contiguous Subarray
+	5.	Find the Missing Number
+	6.	Search an element in a sorted and pivoted array
+	7.	Merge an array of size n into another array of size m+n
+	8.	Median of two sorted arrays
+	9.	Write a program to reverse an array
+	10.	Program for array rotation
+	11.	Reversal algorithm for array rotation
+	12.	Block swap algorithm for array rotation
+	13.	Maximum sum such that no two elements are adjacent
+	14.	Leaders in an array
+	15.	Sort elements by frequency | Set 1
+	16.	Count Inversions in an array
+	17.	Two elements whose sum is closest to zero
+	18.	Find the smallest and second smallest element in an array
+	19.	Check for Majority Element in a sorted array
+	20.	Maximum and minimum of an array using minimum number of comparisons
+	21.	Segregate 0s and 1s in an array
+	22.	k largest(or smallest) elements in an array | added Min Heap method
+	23.	Maximum difference between two elements
+	24.	Union and Intersection of two sorted arrays
+	25.	Floor and Ceiling in a sorted array
+	26.	A Product Array Puzzle
+	27.	Segregate Even and Odd numbers
+	28.	Find the two repeating elements in a given array
+	29.	Sort an array of 0s, 1s and 2s
+	30.	Find the Minimum length Unsorted Subarray, sorting which makes the complete array sorted
+	31.	Find duplicates in O(n) time and O(1) extra space
+	32.	Equilibrium index of an array
+	33.	Linked List vs Array
+	34.	Which sorting algorithm makes minimum number of memory writes?
+	35.	Turn an image by 90 degree
+	36.	Next Greater Element
+	37.	Check if array elements are consecutive | Added Method 3
+	38.	Find the smallest missing number
+	39.	Count the number of occurrences in a sorted array
+	40.	Interpolation search vs Binary search
+	41.	Given an array arr[], find the maximum j - i such that arr[j] > arr[i]
+	42.	Maximum of all subarrays of size k (Added a O(n) method)
+	43.	Find whether an array is subset of another array | Added Method 3
+	44.	Find the minimum distance between two numbers
+	45.	Find the repeating and the missing | Added 3 new methods
+	46.	Median in a stream of integers (running integers)
+	47.	Find a Fixed Point in a given array
+	48.	Maximum Length Bitonic Subarray
+	49.	Find the maximum element in an array which is first increasing and then decreasing
+	50.	Count smaller elements on right side
+	51.	Minimum number of jumps to reach end
+	52.	Implement two stacks in an array
+	53.	Find subarray with given sum
+	54.	Dynamic Programming | Set 14 (Maximum Sum Increasing Subsequence)
+	55.	Longest Monotonically Increasing Subsequence Size (N log N)
+	56.	Find a triplet that sum to a given value
+	57.	Find the smallest positive number missing from an unsorted array
+	58.	Find the two numbers with odd occurrences in an unsorted array
+	59.	The Celebrity Problem
+	60.	Dynamic Programming | Set 15 (Longest Bitonic Subsequence)
+	61.	Find a sorted subsequence of size 3 in linear time
+	62.	Largest subarray with equal number of 0s and 1s
+	63.	Dynamic Programming | Set 18 (Partition problem)
+	64.	Maximum Product Subarray
+	65.	Find a pair with the given difference
+	66.	Replace every element with the next greatest
+	67.	Dynamic Programming | Set 20 (Maximum Length Chain of Pairs)
+	68.	Find four elements that sum to a given value | Set 1 (n^3 solution)
+	69.	Find four elements that sum to a given value | Set 2 ( O(n^2Logn) Solution)
+	70.	Sort a nearly sorted (or K sorted) array
+	71.	Maximum circular subarray sum
+	72.	Find the row with maximum number of 1s
+	73.	Median of two sorted arrays of different sizes
+	74.	Shuffle a given array
+	75.	Count the number of possible triangles
+	76.	Iterative Quick Sort
+	77.	Find the number of islands
+	78.	Construction of Longest Monotonically Increasing Subsequence (N log N)
+	79.	Find the first circular tour that visits all petrol pumps
+	80.	Arrange given numbers to form the biggest number
+	81.	Pancake sorting
+	82.	A Pancake Sorting Problem
+	83.	Tug of War
+	84.	Divide and Conquer | Set 3 (Maximum Subarray Sum)
+	85.	Counting Sort
+	86.	Merge Overlapping Intervals
+	87.	Find the maximum repeating number in O(n) time and O(1) extra space
+	88.	Stock Buy Sell to Maximize Profit
+	89.	Rearrange positive and negative numbers in O(n) time and O(1) extra space
+	90.	Sort elements by frequency | Set 2
+	91.	Find a peak element
+	92.	Print all possible combinations of r elements in a given array of size n
+	93.	Given an array of of size n and a number k, find all elements that appear more than n/k times
+	94.	Find the point where a monotonically increasing function becomes positive first time
+	95.	Find the Increasing subsequence of length three with maximum product
+	96.	Find the minimum element in a sorted and rotated array
+	97.	Stable Marriage Problem
+	98.	Merge k sorted arrays | Set 1
+	99.	Radix Sort
+
+	100.	Move all zeroes to end of array
+	101.	Find number of pairs such that x^y > y^x
+	102.	Count all distinct pairs with difference equal to k
+	103.	Find if there is a subarray with 0 sum
+	104.	Smallest subarray with sum greater than a given value
+	105.	Sort an array according to the order defined by another array
+	106.	Maximum Sum Path in Two Arrays
+	107.	Check if a given array contains duplicate elements within k distance from each other
+	108.	Sort an array in wave form
+	109.	Kth Smallest/Largest Element in Unsorted Array
+	110.	Kth Smallest/Largest Element in Unsorted Array in Expected Linear Time
+	111.	Kth Smallest/Largest Element in Unsorted Array in Worst Case Linear Time
+	112.	Find Index of 0 to be replaced with 1 to get longest continuous sequence of 1s in a binary array
+	113.	Find the closest pair from two sorted arrays
+	114.	Given a sorted array and a number x, find the pair in array whose sum is closest to x
+	115.	Count 1s in a sorted binary array
+	116.	Print All Distinct Elements of a given integer array
+	117.	Construct an array from its pair-sum array
+	118.	Find common elements in three sorted arrays
+	119.	Find the first repeating element in an array of integers
+	120.	Find the smallest positive integer value that cannot be represented as sum of any subset of a given array
+	121.	Rearrange an array such that 'arr[j]' becomes 'i' if 'arr[i]' is 'j'
+	122.	Find position of an element in a sorted array of infinite numbers
+	123.	Can QuickSort be implemented in O(nLogn) worst case time complexity?
+	124.	Check if a given array contains duplicate elements within k distance from each other
+	125.	Find the element that appears once
+	126.	Replace every array element by multiplication of previous and next
+	127.	Check if any two intervals overlap among a given set of intervals
+	128.	Delete an element from array (Using two traversals and one traversal)
+	129.	Given a sorted array and a number x, find the pair in array whose sum is closest to x
+	130.	Find the largest pair sum in an unsorted array
+	131.	Online algorithm for checking palindrome in a stream
+	132.	Find Union and Intersection of two unsorted arrays
+	133.	Pythagorean Triplet in an array
+	134.	Maximum profit by buying and selling a share at most twice
+
+
+	/*
+	Heap Sort
+	K’th Largest Element in an array
+	Sort an almost sorted array/
+	Tournament Tree (Winner Tree) and Binary Heap
+	*/
+
+}
+
+void Search()
+{
+	1.	Binary Search
+	2.	Interpolation search vs Binary search
+	3.	Find k closest elements to a given value
+	4.	A Problem in Many Binary Search Implementations
+	5.	Search in an almost sorted array
+	6.	Sort an array in wave form
+	7.	Why is Binary Search preferred over Ternary Search
+
+	8.	K th Smallest/Largest Element in Unsorted Array
+	9.	K th Smallest/Largest Element in Unsorted Array in Expected Linear Time
+	10.	K th Smallest/Largest Element in Unsorted Array in Worst Case Linear Time
+	11.	Find the closest pair from two sorted arrays
+	12.	Find common elements in three sorted arrays
+	13.	Given a sorted array and a number x, find the pair in array whose sum is closest to x
+	14.	Count 1  in a sorted binary array
+	
+}
+void Sort()
+{
+
+	15. Sort elements by frequency | Set 1	
+	90. Sort elements by frequency | Set 2
+	108.	Sort an array in wave form
+	105.	Sort an array according to the order defined by another array
+
+	1.	Selection Sort
+	2.	Bubble Sort
+	3.	Insertion Sort
+	4.	Merge Sort
+	5.	Heap Sort //pks
+	6.	QuickSort
+	7.	Radix Sort
+	8.	Counting Sort
+	9.	Bucket Sort
+	10.	ShellSort
+	11.	Comb Sort
+	12.	Pigeonhole Sort
+	19.	Sort a nearly sorted (or K sorted) array
+
+	20.	Iterative Quick Sort
+	23.	Sort n numbers in range from 0 to n^2 - 1 in linear time
+	24.	Binary Insertion Sort
+
+
+	13.	Stability in sorting algorithms
+	14.	When does the worst case of Quicksort occur?
+	15.	Lower bound for comparison based sorting algorithms
+	16.	Which sorting algorithm makes minimum number of memory writes?
+	17.	Find the Minimum length Unsorted Subarray, sorting which makes the complete array sorted
+
+	18.	Merge Sort for Linked Lists
+	21.	QuickSort on Singly Linked List
+	22.	QuickSort on Doubly Linked List
+	25.	Insertion Sort for Singly Linked List
+	27.	Merge Sort for Doubly Linked List
+	26.	Why Quick Sort preferred for Arrays and Merge Sort for Linked Lists?
+
+}
+
+void Approach_Theory_Notes()
+{
+	<set of object, container>
+	#2search
+		(find,check, select, search)
+	<	Sort, Serach, 2 index scan, Hashbased Scan, Selection, modifed binary search>
+
+
+	- 2 scan, outer scan, inner scan the if <selection codition>then processing
+	- Make odered set using sorting tech, then scan , if codition the  processsing
+	- Hash/Table based<Additional storage> then process <countArray,Char256Hash, bitMap >
+	- Store in Additinal Database  <Balanced BST>
+	- Find Max/Min <PQ, Binary Heap>
+	- Some mathematical/XOR logic -> some asumption on i/p is fixed.
+
+	/*
+	Notes-1:
+	2. Search in unodered set
+		a) Selection
+		b) find number or some maths
+		c) hash and count array
+
+	*/
+
+	/*
+	Note-2:
+	
+	search in arranged ororganazed data
+	<Binary or  Modified binary search>
+	*/
+}
+
+
+void AR_Page1()
+{
+	
+Count minimum steps to get the given desired array April 25, 2016
+	Consider an array with n elements and value of all the elements is zero. 
+	We can perform following operations on the array. Incremental operations:
+	Choose 1 element from the array and increment its value by 1.
+	Doubling operation: Double the values of all the elements of array. 
+	We are given desired array target[] containing n elements
+
+Count pairs with given sum April 16, 2016
+	Given an array of integers, and a number ‘sum’, find the number of pairs of integers in the 
+	array whose sum is equal to sum. 
+	//Examples Input : arr[] = {1, 5, 7, -1}, sum = 6 Output : 2 Pairs with sum 6 are (1, 5) and (7, -1) 
+
+Find lost element from a duplicated array 
+	Given two arrays which are duplicates of each other except one element, 
+	that is one element from one of the array is missing, we need to find that missing element. 
+	//Examples: Input: arr1[] = {1, 4, 5, 7, 9} arr2[] = {4, 5, 7, 9} Output: 1 1 is missing from second array. 
+	
+Find minimum difference between any two elements
+	Given an unsorted array, find the minimum difference between any pair in given array.
+	//Examples : Input : {1, 5, 3, 19, 18, 25}; Output : 1 Minimum difference is between 18 and 19 
+	//Input : {30, 5, 20, 9}; Output : 4 Minimum difference is between 5 and 9 	
+Rearrange an array in maximum minimum form
+	Given a sorted array of positive integers, rearrange the array alternately 
+	i.e first element should be maximum value, second minimum value, third second max, 
+	fourth second min and so on. 
+	//Examples: Input : arr[] = {1, 2, 3, 4, 5, 6, 7} 
+	//Output : arr[] = {7, 1, 6, 2, 5, 3, 4} 
+	
+Count Strictly Increasing Subarrays February 11, 2016
+	Given an array of integers, count number of subarrays (of size more than one) 
+	that are strictly increasing. Expected Time Complexity : O(n) Expected Extra Space: O(1)
+	//Examples: Input: arr[] = {1, 4, 3} Output: 1 There is only one subarray {1, 4} 
+	//Input: arr[] = {1, 2, 3, 4} Output: 6 There are 6
+
+Subarray/Substring vs Subsequence and Programs to Generate them February 5, 2016
+	Subarray/Substring A subbarray is a contiguous part of array. An array that is inside another array. 
+	For example, consider the array [1, 2, 3, 4], There are 10 non-empty sub-arrays. 
+	The subbarays are (1), (2), (3), (4), (1,2), (2,3), (3,4), (1,2,3), (2,3,4) and (1,2,3,4). 
+	In general, for an array/string of size n, there are n*(n+1)/2… Read More »
+
+Form minimum number from given sequence February 2, 2016
+	Given a pattern containing only I’s and D’s. I for increasing and D for decreasing. 
+	Devise an algorithm to print the minimum number following that pattern. 
+	Digits from 1-9 and digits can’t repeat. Examples: Input: D Output: 21 
+	//Input: I Output: 12 Input: DD Output: 321 Input: II Output: 123 Input:
+	//DIDI Output: 21435 Input:… Read More »
+
+Merge two sorted arrays with O(1) extra space January 16, 2016
+	We are given two sorted array. We need to merge these two arrays such that the initial numbers 
+	(after complete sorting) are in the first array and the remaining numbers are in the second array. 
+	Extra space allowed in O(1). 
+	//Example: Input: ar1[] = {1, 5, 9, 10, 15, 20}; ar2[] = {2, 3, 8
+	
+Longest Span with same Sum in two Binary arrays December 25, 2015
+	Given two binary arrays arr1[] and arr2[] of same size n. 
+	Find length of the longest common span (i, j) where j >= i such that arr1[i] + arr1[i+1] + …. + arr1[j]
+	 = arr2[i] + arr2[i+1] + …. + arr2[j]. 
+	 Expected time complexity is T(n). 
+	 //Examples: Input: arr1[] = {0, 1, 0, 0, 0
+ 
+Count Inversions of size three in a give array December 21, 2015
+	Given an array arr[] of size n. Three elements arr[i], arr[j] and arr[k]
+	form an inversion of size 3 if a[i] > a[j] >a[k] and i < j < k. 
+	Find total number of inversions of size 3. 
+	//Example: Input: {8, 4, 2, 1} Output: 4 
+	The four inversions are (8,4,2), (8,4,1), (4,2,1) and (8,2,1)
+	
+Find the subarray with least average December 14, 2015
+	Given an array arr[] of size n and integer k such that k
+
+Count triplets with sum smaller than a given value November 10, 2015
+	Given an array of distinct integers and a sum value. 
+	Find count of triplets with sum smaller than given sum value. 
+	Expected Time Complexity is O(n2). 
+	//Examples: Input : arr[] = {-2, 0, 1, 3} sum = 2. Output : 2 
+	//Explanation : Below are triplets with sum less than 2 (-2, 0, 1)
+
+Find zeroes to be flipped so that number of consecutive 1’s is maximized November 7, 2015
+	Given a binary array and an integer m, find the position of zeroes flipping 
+	which creates maximum number of consecutive 1s in array. 
+	//Examples: Input: arr[] = {1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1} m = 2 
+	//Output: 5 7 We are allowed to flip maximum 2 zeroes. 
+	
+Reorder an array according to given indexes October 29, 2015
+	Given two integer arrays of same size, “arr[]” and “index[]”, reorder elements in “arr[]” 
+	according to given index array. It is not allowed to given array arr’s length.
+	//Example: Input: arr[] = [10, 11, 12]; index[] = [1, 0, 2]; 
+	//Output: arr[] = [11, 10, 12] 
+	
+Find maximum value of Sum( i*arr[i]) with only rotations on given array allowed September 17, 2015
+	Given an array, only rotation operation is allowed on array. 
+	We can rotate the array as many times as we want. Return the maximum possbile of summation of i*arr[i].
+
+Find maximum average subarray of k length August 28, 2015
+	Given an array with positive and negative numbers, find the maximum average subarray of given length.
+
+Convert array into Zig-Zag fashion August 22, 2015
+	Given an array of distinct elements, rearrange the elements of array in zig-zag fashion in O(n) time. 
+	The converted array should be in form a < b > c < d > e < f.
+
+Trapping Rain Water August 16, 2015
+	Given n non-negative integers representing an elevation map where the width of each bar is 1, 
+	compute how much water it is able to trap after raining.
+
+Minimum number of swaps required for arranging pairs adjacent to each other
+	There are n-pairs and therefore 2n people. everyone has one unique number ranging from 1 to 2n. 
+	All these 2n persons are arranged in random fashion in an Array of size 2n. 
+	We are also given who is partner of whom.
+}
+
+
+void AR_Page2()
+{
+Generate all possible sorted arrays from alternate elements of two given sorted arrays July 1, 2015
+	Given two sorted arrays A and B, generate all possible arrays such that first element 
+	is taken from A then from B then from A and so on in increasing order till the arrays exhausted.
+
+Count frequencies of all elements in array in O(1) extra space and O(n) time June 23, 2015
+	Given an unsorted array of n integers which can contain integers from 1 to n.
+	Some elements can be repeated multiple times and some other elements can be absent from the array.
+
+Find Union and Intersection of two unsorted arrays May 1, 2015
+	Given two unsorted arrays that represent two sets (elements in every array are distinct), 
+	find union and intersection of two arrays.
+
+Pythagorean Triplet in an array April 22, 2015
+	Given an array of integers, write a function that returns true if there is a 
+	triplet (a, b, c) that satisfies a2 + b2 = c2.
+
+Print missing elements that lie in range 0 – 99 April 8, 2015
+	Given an array of integers print the missing elements that lie in range 0-99. 
+	If there are more than one missing, collate them, otherwise just print the number.
+
+Rearrange an array such that ‘arr[j]’ becomes ‘i’ if ‘arr[i]’ is ‘j’ February 25, 2015
+	Given an array of size n where all elements are in range from 0 to n-1, 
+	change contents of arr[] so that arr[i] = j is changed to arr[j] = i.
+
+Given a binary string, count number of substrings that start and end with 1. December 28, 2014
+	Given a binary string, count number of substrings that start and end with 1. 
+	For example, if the input string is “00100101”, then there are three substrings “1001”, “100101” and “101”.
+
+Nuts & Bolts Problem (Lock & Key problem) December 20, 2014
+	Given a set of n nuts of different sizes and n bolts of different sizes. 
+	There is a one-one mapping between nuts and bolts. Match nuts and bolts efficiently.
+
+Find Index of 0 to be replaced with 1 to get longest continuous sequence of 1s in a binary array November 29, 2014
+	Given an array of 0s and 1s, find the position of 0 to be replaced with 1 
+	to get longest continuous sequence of 1s.
+
+Length of the largest subarray with contiguous elements | Set 1 October 18, 2014
+	Given an array of distinct integers, find length of the longest subarray 
+	which contains numbers that can be arranged in a continuous sequence.
+
+Find common elements in three sorted arrays September 18, 2014
+	Given three arrays sorted in non-decreasing order, 
+	print all common elements in these arrays.
+
+Find the smallest positive integer value that cannot be represented as sum of any subset of a given array September 9, 2014
+	Given a sorted array (sorted in non-decreasing order) of positive numbers, find the 
+	smallest positive integer value that cannot be represented as sum of elements of any subset of given set.
+
+Rearrange array in alternating positive & negative items with O(1) extra space August 24, 2014
+	Given an array of positive and negative numbers, arrange them in an alternate fashion 
+	such that every positive number is followed by negative and vice-versa maintaining the order of appearance.
+
+Maximum Sum Path in Two Arrays July 18, 2014
+	Given two sorted arrays such the arrays may have some common elements. 
+	Find the sum of the maximum sum path to reach from beginning of any array to end of any of the two arrays.
+
+Smallest subarray with sum greater than a given value May 13, 2014
+	Given an array of integers and a number x, find the smallest subarray 
+	with sum greater than the given value.
+
+Find the number of zeroes April 6, 2014
+	Given an array of 1s and 0s which has all 1s first followed by all 0s. 
+	Find the number of 0s. Count the number of zeroes in the given array.
+
+Count all possible groups of size 2 or 3 that have sum as multiple of 3 March 24, 2014
+	Given an unsorted integer (positive values only) array of size ‘n’, we can form a group of two or three,
+
+Rearrange an array so that arr[i] becomes arr[arr[i]] with O(1) extra space March 3, 2014
+	Given an array arr[] of size n where every element is in range from 0 to n-1. 
+	Rearrange the given array so that arr[i] becomes arr[arr[i]].
+
+Move all zeroes to end of array October 12, 2013
+	Given an array of random numbers, Push all the zero’s of a given array to the end of the array.
+
+Find the Increasing subsequence of length three with maximum product June 24, 2013
+	Given a sequence of non-negative integers, find the subsequence of length 
+	3 having maximum product with the numbers of the subsequence being in ascending order.
+}
+
+void AR_page3()
+{
+Rearrange positive and negative numbers in O(n) time and O(1) extra space April 13, 2013
+	An array contains both positive and negative numbers in random order. Rearrange the array 
+	elements so that positive and negative numbers are placed alternatively.
+
+Stock Buy Sell to Maximize Profit March 31, 2013
+	The cost of a stock on each day is given in an array, find the max profit that you can make by 
+	buying and selling in those days.
+
+Find the maximum repeating number in O(n) time and O(1) extra space March 26, 2013
+	Given an array of size n, the array contains numbers in range from 0 to k-1 where k is 
+	a positive integer and k < = n. Find the maximum repeating number in this array.
+
+Merge Overlapping Intervals March 21, 2013
+	Given a set of time intervals in any order, merge all overlapping intervals into one and output 
+	the result which should have only mutually exclusive intervals. 
+	Let the intervals be represented as pairs of integers for simplicity.
+
+90 Comments Category: Arrays Stack Tags: stack
+Arrange given numbers to form the biggest number February 19, 2013
+Given an array of numbers, arrange them in a way that yields the largest value. For example, if the given numbers are {54, 546, 548, 60}, the arrangement 6054854654 gives the largest value.
+
+Construction of Longest Monotonically Increasing Subsequence (N log N) November 23, 2012
+	In my previous post, I have explained about longest monotonically increasing sub-sequence (LIS) 
+	problem in detail.
+
+Count the number of possible triangles October 11, 2012
+	Given an unsorted array of positive integers. Find the number of triangles 
+	that can be formed with three different array elements as three sides of triangles. 
+	For a triangle to be possible from 3 values, the sum of any two values 
+	(or sides) must be greater than the third value (or third side).
+
+Maximum circular subarray sum September 18, 2012
+	Given n numbers (both +ve and -ve), arranged in a circle, 
+	find the maximum sum of consecutive number.
+
+Find four elements that sum to a given value | Set 2 ( O(n^2Logn) Solution) September 4, 2012
+	Given an array of integers, find all combination of four elements in the 
+	array whose sum is equal to a given value X.
+
+Find four elements that sum to a given value | Set 1 (n^3 solution)
+	Given an array of integers, find all combination of four elements in the 
+	array whose sum is equal to a given value X.
+
+Replace every element with the greatest element on right side August 30, 2012
+	Given an array of integers, replace every element with the next greatest element 
+	(greatest element on the right side) in the array.
+
+Maximum Product Subarray July 23, 2012
+	Given an array that contains both positive and negative integers, 
+	find the product of the maximum product subarray. Expected Time complexity is O(n) and only O(1) 
+	extra space can be used.
+
+Largest subarray with equal number of 0s and 1s June 26, 2012
+	Given an array containing only 0s and 1s, find the largest subarray which contain equal no of 0s and 1s. 
+	Expected time complexity is O(n).
+
+
+Find a sorted subsequence of size 3 in linear time June 8, 2012
+	Given an array of n integers, find the 3 elements such that a[i] < a[j] < a[k] and i < j < k in 0(n) time. 
+	If there are multiple such triplets, then print any one of them.
+
+Find the two numbers with odd occurrences in an unsorted array May 24, 2012
+	Given an unsorted array that contains even number of occurrences for all numbers 
+	except two numbers. Find the two numbers which have odd occurrences in 
+	O(n) time complexity and O(1) extra space.
+
+Find the smallest positive number missing from an unsorted array May 22, 2012
+	You are given an unsorted array with both positive and negative elements. 
+	You have to find the smallest positive number missing from the array in O(n) time using 
+	constant extra space. You can modify the original array.
+
+Find a triplet that sum to a given value
+	Given an array and a value, find if there is a triplet in array whose sum is 
+	equal to the given value. If there is such a triplet present in array, then print the triplet and return true.
+
+Longest Increasing Subsequence Size (N log N) May 18, 2012
+	After few months of gap posting an algo. The current post is pending from long time, and many readers (e.g. here, here, here may be few more, I am not keeping track of all) are posting requests for explanation of the below problem.
+
+Find subarray with given sum May 13, 2012
+	Given an unsorted array of nonnegative integers, find a continous subarray which adds to a given number.
+
+Count smaller elements on right side January 23, 2012
+	Write a function to count number of smaller elements on right of each element in an array.
+}
+
+void AR_page4()
+{
+Maximum Length Bitonic Subarray December 14, 2011
+	Given an array A[0 … n-1] containing n positive integers, a subarray A[i … j] 
+	is bitonic if there is a k with i < = k = A[j].
+
+Find the minimum distance between two numbers June 24, 2011
+	Given an unsorted array arr[] and two numbers x and y, 
+	find the minimum distance between x and y in arr[].
+
+Given an array arr[], find the maximum j – i such that arr[j] > arr[i] May 21, 2011
+	Given an array arr[], find the maximum j – i such that arr[j] > arr[i].
+
+Find the smallest missing number April 17, 2011
+	Given a sorted array of n integers where each integer is in the range from 0 to m-1 and m > n.
+
+Check if array elements are consecutive | Added Method 3 April 6, 2011
+	Given an unsorted array of numbers, write a function that returns true if 
+	array consists of consecutive numbers.
+
+
+Equilibrium index of an array January 7, 2011
+	Equilibrium index of an array is an index such that the sum of elements at 
+	lower indexes is equal to the sum of elements at higher indexes. For example, in an arrya A:
+
+Find duplicates in O(n) time and O(1) extra space January 4, 2011
+	Given an array of n elements which contains elements from 0 to n-1, 
+	with any of these numbers appearing any number of times. 
+	Find these repeating numbers in O(n) and using only constant memory space.
+
+Find the two repeating elements in a given array June 9, 2010
+	You are given an array of n+2 elements. All elements of the array are in range 1 to n. 
+	And all elements occur once except two numbers which occur twice. Find the two repeating numbers.
+
+Segregate Even and Odd numbers June 7, 2010
+
+
+A Product Array Puzzle May 18, 2010
+	Given an array arr[] of n integers, construct a Product Array prod[] (of same size) 
+	such that prod[i] is equal to the product of all the elements of arr[] except arr[i]. 
+	Solve it without division operator and in O(n).
+
+Union and Intersection of two sorted arrays April 27, 2010
+
+Maximum difference between two elements such that larger element appears after the smaller number April 10, 2010
+	Given an array arr[] of integers, find out the difference between any two elements such that 
+	larger element appears after the smaller number in arr[].
+
+205 Comments Category: Arrays
+Segregate 0s and 1s in an array February 28, 2010
+Asked by kapil. You are given an array of 0s and 1s in random order. Segregate 0s on left side and 1s on right side of the array. Traverse array only once.
+
+Check for Majority Element in a sorted array February 11, 2010
+
+Leaders in an array December 7, 2009
+	An element is leader if it is greater than all the elements to its right side. 
+	And the rightmost element is always a leader. 
+	For example int the array {16, 17, 4, 3, 5, 2}, leaders are 17, 5 and 2.
+
+Maximum sum such that no two elements are adjacent November 26, 2009
+	Question: Given an array of positive numbers, find the maximum sum of a subsequence 
+	with the constraint that no 2 numbers in the sequence should be adjacent in the array. 
+	So 3 2 7 10 should return 13 (sum of 3 and 10) or 3 2 5 10 7 should return 15 	
+}
+
+void AR_page5()
+{
+
+//XOR
+Find the Number Occurring Odd Number of Times
+	
+Write a program to reverse an array or string October 30, 2009
+
+Program for array rotation
+Reversal algorithm for array rotation November 10, 2009
+	Write a function rotate(arr[], d, n)
+Block swap algorithm for array rotation November 14, 2009
+
+
+Merge an array of size n into another array of size m+n September 5, 2009
+
+
+Majority Element: more than n/2 times 
+//Majority Element, Moore's Voting Algorithm
+
+getPairSum(int* a, int key)
+	
+}
+

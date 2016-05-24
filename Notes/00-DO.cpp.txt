@@ -1,0 +1,97 @@
+
+
+void Practice_DAILY()
+{
+
+	// 1 DS
+	stack
+	Q
+	heap
+	hash
+
+	LL
+	BST
+	Array
+	BitFun()
+
+	// 2. Algo
+	sort
+	search
+	modifiedBinary Seach <some constrain>
+
+	// 3. Design
+	DP
+	design problem 
+		//solve Daily Design problem
+
+	// C++ & template
+	C++-FAQ
+	template algo
+		<Function and class template>
+
+	// Practice Q
+	AZ_MS question solve
+
+	//uptodate
+	Geek uptodate
+	you tube interview Puzzle
+	
+}
+
+void do_read()
+{
+	Matrix
+	string
+	you tube interview Puzzle
+	
+	// Alog
+	DP
+	backtrace & recursion
+	Greedy
+	D&C
+
+	#
+	Grapth
+
+	##
+	systme Design
+	design 
+	
+}
+
+void practiceDO()
+{
+	practice for the compitive programing
+		//hacker rank, geek IDE, leet IDE
+		// hackthon & design chellange & coding challange
+		//code jam
+		coding challange book
+		
+		
+
+}
+void DO()
+{
+
+	#Design Problem and Design pattern
+		1) DP
+		3) OOP Design 
+		4) System Design <Scalable>
+		5) concurancy & thread Problem & Pattern <EP, thread patthernI>
+
+	#DS & Algo	
+		#Done:	
+		1) LL()
+		2) BST()
+		4) BitFun()
+		3) Array() <sort, search/find- org & unorg data, select>
+	
+	#DO:	
+		5) String
+		<Matrix>
+
+	#Practice other
+		1)CPP Template
+		2) CPP idiames
+}
+

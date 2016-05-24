@@ -1,0 +1,116 @@
+void BTS2DLL_DLL2BST_Merge()
+{
+	//BST
+	Sorted Array to Balanced BST January 18, 2012
+		Given a sorted array. Write a function that creates a Balanced Binary Search Tree using array elements.
+	
+	Sorted Linked List to Balanced BST January 17, 2012
+		Given a Singly Linked List which has data members sorted in ascending order. 
+		Construct a Balanced Binary Search Tree which has same data members as the given Linked List.
+
+	Convert SortedDoubly Linked List(DLL) to Balanced BST
+	In-place conversion of Sorted DLL to Balanced BST
+	
+	Binary Tree to Binary Search Tree Conversion June 15, 2012
+		The conversion must be done in such a way that keeps the original structure of Binary Tree.
+
+
+	Construct Complete Binary Tree from its Linked List Representation March 19, 2013
+
+	Linked complete binary tree & its creation January 6, 2013
+
+	Convert a given Binary Tree to Doubly Linked List ((DLL) | Set 1
+		The left and right pointers in nodes are to be used as previous and next pointers respectively
+		in converted DLL.
+
+
+	Convert a given Binary Tree to Doubly Linked List | Set 2 June 29, 2013
+
+	Convert a given Binary Tree to Doubly Linked List | Set 3 February 17, 2014
+		Given a Binary Tree (BT), convert it to a Doubly Linked List(DLL) In-Place. 
+		The left and right pointers in nodes are to be used as previous and next pointers respectively in converted DLL.
+
+	Extract Leaves of a Binary Tree in a Doubly Linked List October 4, 2013
+
+
+	//BST
+
+	Merge two BSTs with limited extra space June 1, 2012
+		Given two Binary Search Trees(BST), print the elements of both BSTs in sorted form. 
+		The expected time complexity is O(m+n)
+
+	Merge Two Balanced Binary Search Trees March 30, 2012
+		You are given two balanced binary search trees e.g., AVL or Red Black Tree.
+		Write a function that merges the two given balanced BSTs into a balanced binary search tree.
+
+	Two nodes of a BST are swapped, correct the BST September 14, 2012
+		Two of the nodes of a Binary Search Tree (BST) are swapped. Fix (or correct) the BST.
+
+
+}
+
+#Define 1
+//Convert a given Binary Tree to Doubly Linked List | Set 1
+	node* bintree2listUtil(node* root)
+	{
+		if (root == NULL)
+			return root;
+	 
+		// Convert the left subtree and link to root
+		if (root->left != NULL)
+		{
+			// Convert the left subtree
+			node* left = bintree2listUtil(root->left);
+	 
+			// Find inorder predecessor. After this loop, left
+			// will point to the inorder predecessor
+			for (; left->right!=NULL; left=left->right);
+	 
+			// Make root as next of the predecessor
+			left->right = root;
+	 
+			// Make predecssor as previous of root
+			root->left = left;
+		}
+	 
+		// Convert the right subtree and link to root
+		if (root->right!=NULL)
+		{
+			// Convert the right subtree
+			node* right = bintree2listUtil(root->right);
+	 
+			// Find inorder successor. After this loop, right
+			// will point to the inorder successor
+			for (; right->left!=NULL; right = right->left);
+	 
+			// Make root as previous of successor
+			right->left = root;
+	 
+			// Make successor as next of root
+			root->right = right;
+		}
+	 
+		return root;
+	}
+	 
+	// The main function that first calls bintree2listUtil(), then follows step 3 
+	//	of the above algorithm
+	node* bintree2list(node *root)
+	{
+		// Base case
+		if (root == NULL)
+			return root;
+	 
+		// Convert to DLL using bintree2listUtil()
+		root = bintree2listUtil(root);
+	 
+		// bintree2listUtil() returns root node of the converted
+		// DLL.  We need pointer to the leftmost node which is
+		// head of the constructed DLL, so move to the leftmost node
+		while (root->left != NULL)
+			root = root->left;
+	 
+		return (root);
+	}
+
+

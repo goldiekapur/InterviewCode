@@ -1,0 +1,547 @@
+
+void BST_Topic()
+{
+	idioms
+	Traversals_View
+	Print
+	Count
+	Check
+	Convert
+	BST2DLL
+	Construct(Deserialize)
+	nextRight_Successor_Predessor
+	Random_clone_Remove
+	LCA
+	find_search
+}
+void BST_practice_my()
+{
+
+}
+
+void Tree_Idioms()
+{
+	insert
+	delete/remove
+	pre,post,inorder ->recursive,iterative(stack)
+	level(Q), levelMarker
+}
+
+void Traversals_View()
+{
+	
+	Morris traversal for Preorder 
+
+		Using Morris Traversal, we can traverse the tree without using stack and recursion. 
+		The algorithm for Preorder is almost similar to Morris traversal for Inorder.
+	
+	Inorder Tree Traversal without recursion and without stack
+	Inorder Non-threaded Binary Tree Traversal using parent pointer (without Recursion or Stack)
+
+	#Array repesentation Traversals
+	Sorted order printing of a given array that represents a BST
+	Array repesentation of Tree Traversals(Inorder, PreOrder, PreOrder)  
+
+	#Recursive_DFS
+	//#Tree Traversals (Inorder, PreOrder, PreOrder -Recursive)
+	void printPreOrder(node* root)
+	void printInorder(node* root)
+	void printPreOrder(node* root)
+
+	#Iterative_DFS
+	// DFS: Stack is used to traverse tree without recursion. 
+	//Note: preOrder and levelorder similar in temp.
+	//BFS: iterative: use Q &  recursive: first find hight the preOder using level
+
+	void printInorder_Iterative(node* root)
+	void printPreOrder_Iterative(node* root)	
+	void printPostorde_Iterative_using2Stack(node* root)
+	void printPostorde_Iterative_using1Stack(node* root)
+
+	
+	#level Order
+	void levelOrderTraversal(node* root)
+	void reverseLevelOrderTraversal(node* root)
+	void spiralLevelOrderTraversal(node* root) //<Zigzag>
+
+	#Iterative_BFS
+	void levelOrderTraversal_Iterative(node* root)
+	void reverseLevelOrderTraversal_Iterative(node* root) //q and stack
+	void spiralLevelOrderTraversal_Iterative(node* root) //<Zigzag>
+
+	void printLeftmostRightmostTraversal_EachLevel(node* root) //(BFS)
+	
+	
+	//View
+	boundaryTraversal(node* root) // Anti-Clockwise starting from the root.
+	
+	printLeftView(node* root)
+	printRightView(node* root)
+
+	printTopView(node* root)
+	printTopView(node* root)	
+	printBottomView(node* root) //bottom view from left to right.
+
+	//DO
+	Perfect Binary Tree Specific Level Order Traversal
+	Perfect Binary Tree Specific Level Order Traversal 
+	Perfect Binary Tree using Specific Level Order Traversal in Set 1. 
+	
+}
+
+void Print()
+{
+	//path, Vertical, Kth
+	
+	
+	void printPaths_BT(node* root)
+
+	void printVerticalOrder_BT(node* root) //Set 1
+	void printVerticalOrder_BT_HashmapBased(node* root) //Set 2 (Hashmap based Method) 	
+	
+
+	Vertical Sum in a given Binary Tree | Set 1
+		find vertical sum of the nodes that are in same vertical line. 
+		Print all sums through different vertical lines.
+	Vertical Sum in Binary Tree | Set 2 (Space Optimized)
+	
+	//K distance
+	Print nodes at K distance from root
+	Print all nodes that are at distance K from a leaf
+	Print all nodes at distance K from a given node
+	
+	void printRange_BST(node* root, int k1, int k2)  //print all k1<= x <=k2, level & inorder
+		
+
+	void printBetweenLevel(node* root, int lowLevel, int highLevel)
+	printCommonNodes_2BST(node* root1, node* root2)
+
+}
+
+void Calculate_Count()
+{
+	// pre or level Traverse then process/calculation	
+	countNodesBT_Size(node* root) //sizeBT(node* root) 
+
+	countLeafNodesBT(node* root)
+
+	countNodes2childBT(node* root)
+
+	countNodes1childBT(node* root)
+
+	//countInternalNodesBT(node* root)
+	//countExternalNodesBT(node* root)
+	
+	printAllNodes_NoSibling(node* root) //level or preOrder
+			//sibling :  node that has same parent. In BT: there can be at most one sibling.
+
+	minDepthBT(node* root) 
+		//minimum depth: nodes counts in shortest path from root to leaf. 
+		
+	height_MaximumDepth(node* root) //Maximum Depth of a Tree
+		
+	height(node* root)// Iterative  to find Height of Binary Tree
+		/*
+		Conventions to define height
+		1) Number of nodes on longest path from root to the deepest node. 
+		2) Number of edges on longest path from root to the deepest node.
+		*/
+	height(node* root) //Binary Tree represented by Parent array
+
+	floorBST(node* root) 
+	ceilBST((node* root)
+	//Floor: XXX && Ceil: XXX
+
+	getMaxBT(node* root) //level or preorder
+	getMinBT(node* root) //level or preorder
+
+	getMaxBST(node* root)  // iterative /recursive/Stack/Q
+	getMinBST(node* root)  // iterative /recursive/Stack/Q
+	
+	findKthSmallestBST(node* root)  //(Order Statistics in BST)
+	findKthLargestBST(node* root) //when modification to BST is not allowed
+	findKthSmallestBST(node* root) //using O(1) 
+	
+	diameterBT(node* root) //Calculate Diameter
+		//Diameter( A.K.A width): number of nodes on longest path between 2 leaves
+		
+	maxWidthBT(node* root) // maximum of widths of all levels.
+	
+	getLevelBT(node* root, node* target)
+	
+	maxPathSumBT(node* root)
+	
+	maxPathSumBT(node* root, node* targert1, node* targert2 )
+		//Find the maximum path sum between two leaves
+
+	Find the maximum sum leaf to root path in a Binary Tree
+		//find the maximum sum path from a leaf to root.
+		
+	Sum of all the numbers that are formed from root to leaf paths
+		Given a binary tree, where every node value is a Digit from 1-9 .
+		Find the sum of all the numbers which are formed from root to leaf paths.
+
+	
+	diagonalSumBT(node* root) 
+	//diagonalSumBT:
+	
+	sumLeftLeavesBT(node* root)
+		//sum of all left leaves in it. 
+	
+	Find Count of Single Valued Subtrees
+		A Single Valued Subtree is one in which all the nodes have same value.
+	
+}
+
+
+void Check()
+{
+	// pre or level Traverse then CHECK
+
+
+	isFoldable((node* root)
+		  isMirror(node* root)
+		  isSymmetric(node* root)
+			//Folded: left & right are structure wise mirror
+			//empty tree: foldable.
+			//Symmetric:  (Mirror Image of itself)
+
+	areIdentical(node* root1, node* root2)
+
+	isomorphism(node* root1, node* root2) 
+		//isomorphic if one of them can be obtained from other by a series of flips, 
+		//i.e. by swapping left and right children of a number of nodes.
+
+	isSubtree(node* root, node* target/* target is subtree of source*/)	| Set 1
+	isSubtree(node* src, node* subTree/* target is subtree of source*/) | Set 2
+	
+	checkPathSum(node* root, int target)  //Root to leaf path sum equal to a given number
+	
+	isChildrenSumProperty(node* root) //node = left  + right 
+	isSumTree(node* root) //node = left subtree + right subtree
+	
+
+	areAllLeavesAtsameLevel(node* root)	//level &  Marker
+	areCousins(node* root, node* target1, node* target1) //two nodes are in a BT
+
+	isBTS(node* root)
+	isHeightBalanced(node * root) //like a Red-Black Tree
+	isComplete(node* root) | Set 1 (Iterative Solution) 
+	iscompleteBT(node* root) | Set 2 (Recursive Solution) 
+	isFullBT(node* root)
+
+	Check if a given array can represent Preorder Traversal of Binary Search Tree October 30, 2015
+	
+	Check if leaf traversal of two Binary Trees is same
+		Leaf traversal is sequence of leaves traversed from left to right. 
+		The problem is to check if leaf traversals of two given Binary Trees are same or not. 
+	
+	//BST
+	
+	Check if each internal node of a BST has exactly one child August 5, 2012
+		Given Preorder traversal of a BST, check if each non-leaf node has only one child. 
+	
+	Check for Identical BSTs without building the trees June 23, 2013
+	
+	
+	Check if removing an edge can divide a Binary Tree in two halves March 26, 2016
+		Given a Binary Tree, find if there exist edge whose removal creates two trees of equal size. 
+		
+	Check sum of Covered and Uncovered nodes of Binary Tree March 18, 2016
+		check whether sum of all covered elements is equal to sum of all uncovered elements or not.
+		In a binary tree, a node is called Uncovered if it appears either on left boundary or right boundary. 
+		Rest of the nodes are called covered. 
+
+}
+
+void Convert_Transfer_Modify_Update()
+{
+	//most of time it is post order traversal
+
+	double(node* root ) //converts a given tree to its Double tre
+	mirrorBT(node* root ) //Convert a BT into its Mirror
+	deleteTree(node* root )
+
+	convertBT2ChildrenSumProperty(node* root)	
+	//Children Sum Property:
+	
+	convertSumTree(node* root)
+	//Sum Tree February:  ,node has positive and negative
+		
+
+	//BST
+	convertBST2GreaterSumTree(node* root)
+	
+	Convert a BST to a Binary Tree such that sum of all greater keys is added to every key January 1, 2013
+
+	Add all greater values to every node in a given BST
+	
+	convertBT2ThreadedBT(node* root)
+		//The idea of threaded binary trees is to make inorder traversal 
+		//faster and do it without stack and without recursion.
+	
+}
+
+void Remove()
+{
+	Remove BST keys outside the given range
+		
+	Remove all nodes which don’t lie in any path with sum>= k 
+	
+	Remove nodes on root to leaf paths of length < K January 13, 2015
+		Given a Binary Tree and a number k, remove all nodes that lie only on root to leaf path(s)
+		of length smaller than k.
+	
+	Remove all the half nodes of binary tree
+}
+
+void BTS2DLL_DLL2BST_Merge()
+{
+	//Construct BST 
+	node* sortedArray2BalancedBST(node* root) //preOrder
+
+	node* sortedSLL2BalancedBST(node* root)  
+	node* constructCompleteBT_from_LL(node* root) //Construct Complete BT from its LL
+	
+	
+	
+	//Convert BT left &to DLL  right => previous & next
+	node* BST2SortedCDLL(node* root) //Set 1
+	node* ConvertBT2DLL(node* root) //Set 2
+	node* ConvertBT2DLL(node* root) //Set 3
+
+	//In-place conversion
+	node* sortedDLL2BalancedBST(node* root) //Set 4 
+
+
+	node* extractBTLeaves_DLL (node* root, node** DLL_head)
+	
+
+	//BST
+	node* merge2BalancedBST(node* root1, node* root1)
+	node* merge2BalancedBST(node* root1, node* root1) //limited extra space
+		
+	Two nodes of a BST are swapped, correct the BST
+		Two of the nodes of a Binary Search Tree (BST) are swapped. Fix (or correct) the BST.
+
+	node* convert_BT2BST(node* root) //keeps the original structure of BT
+	//step1: copy BT 2  array 
+	//step2: sort array
+	//step3: sort array
+	
+	Linked complete binary tree & its creation
+	
+	
+}
+
+
+void Construct_Build_Serialize_Deserialize()
+{
+	Serialize<Encode> and Deserialize<Decode  ==>Construct_Build> a BT
+		Serialization:store tree in a file so that it can be later restored. 
+
+	If you are given 2 traversal, can you construct the BT
+
+	// special BT
+	Construct a special BT from given preorder pre[] & marker preLN[]<‘L’ & ‘N’>
+		where every node has either 0 or 2 
+	
+	Construct Special BT from Inorder (where parent > left & right children) 
+	
+
+	#Sorted Array 2 Balanced BST
+		Construct Balanced BST using sorted array elements <>.
+		
+	
+	//BST
+	Construct BST from given preorder traversal | Set 1
+	Construct BST from given preorder traversal | Set 2
+	Construct a BST from given postorder
+	
+	//BT
+	Construct BT from given Inorder & Preorder
+	Construct BT from Inorder & Level order
+	Construct Binary Tree from given Parent Array representation
+	
+	
+	Find all possible BT with the given Inorder traversal & print their preorder traversals.
+	
+	Print Postorder traversal from given Inorder and Preorder traversals
+	
+}
+
+void nextRight_InorderSuccessor()
+{
+	//BST
+	node* InorderPredecessorBST(node* root, int key)
+	node* InordersuccessorBST(node* root, int key)
+
+	//Populate Inorder Successor for all nodes (populate next pointer for all nodes).
+	node* populateInorderSuccessor(node* root)
+
+
+	Connect nodes at same level
+	Connect nodes at same level using constant extra space 
+		
+	
+	node* nextRightBT(node* root, int key) 
+		//If there is no node on right side, then return NULL.
+
+}
+
+
+void LCA()
+{
+	//LCA: Specail type of search
+	//LCA: Lowest Common Ancestor
+		
+
+	node* lcaBST(node* root1, node* root2)
+
+	void PrintAllAncestorsBT(node* root, int key)
+
+	node* lcaBT(node* root, int key1, int key2) //Set 1
+	node* lcaBT(node* root, int key1, int key2) //Set 2 Using Parent Pointe
+	
+
+	Find LCA in Binary Tree using RMQ
+	
+	Maximum difference between node and its ancestor in Binary Tree February 20, 2016
+		Given a binary tree, we need to find maximum value we can get by subtracting 
+		value of node B from value of node A, 
+		where A and B are two nodes of the binary tree and A is an ancestor of B. 
+}
+
+void find_search_Select()
+{
+
+	//BST
+	Find the largest BST subtree in a given Binary Tree February 17, 2012
+		Given a Binary Tree, write a function that returns the size of the largest subtree 
+		which is also a Binary Search Tree (BST). If the complete Binary Tree is BST, 
+		then return the size of whole tree.
+
+	
+	Find a pair with given sum in a Balanced BST March 10, 2013
+	Find if there is a triplet in a Balanced BST that adds to zero March 9, 2013
+
+
+	find Deepest left leaf node in a binary tree December 1, 2013
+		Given a Binary Tree, find the deepest leaf node that is left child of its parent. 
+
+	Find depth of the deepest odd level leaf node August 24, 2013
+
+	Find distance between two given keys of a Binary Tree February 23, 2014
+
+	Difference between sums of odd level and even level nodes of a Binary Tree August 19, 2013
+		Given a a Binary Tree, find the difference between the sum of nodes at odd level and the sum of nodes at even level. Consider root as level 1, left and right children of root as level 2 and so on.
+
+	Reverse alternate levels of a perfect binary tree June 29, 2014
+		Given a Perfect Binary Tree, reverse the alternate level nodes of the binary tree.
+
+	Find the closest leaf in a Binary Tree December 21, 2014
+
+	Closest leaf to a given node in Binary Tree January 24, 2016
+
+}
+
+void BST_randomClone()
+{
+}
+void BST_ProblemSolving()
+{
+
+	//BST
+	Construct all possible BSTs for keys 1 to N July 17, 2015
+	Data Structure for a single resource reservations May 28, 2015
+	Given n appointments, find all conflicting appointments December 8, 2014
+	Count inversions in an array | Set 2 (Using Self-Balancing BST) December 17, 2015
+	Count BST subtrees that lie in given range July 4, 2015
+	Count BST nodes that lie in a given range July 2, 2015
+
+}
+
+void BST_AdvancedDS()
+{
+	Construct tree from ancestor matrix April 17, 2016
+	Construct Ancestor Matrix from a Given Binary Tree April 15, 2016
+	
+	
+
+	Minimum no. of iterations to pass information to all nodes in the tree September 20, 2014
+		Given a very large n-ary tree. Where the root node has some information which it wants to pass to 
+		all of its children down to the leaves with the constraint that it can only pass the information to 
+		one of its children at a time (take it as one iteration).
+
+	Mirror of n-ary Tree October 26, 2015
+		Given a Tree where every node contains variable number of children, convert the tree to its mirror. 
+
+	Locking and Unlocking of Resources arranged in the form of n-ary Tree January 6, 2016
+		Given an n-ary tree of resources arranged hierarchically such that height of tree is O(Log N) 
+
+	Find multiplication of sums of data of leaves at same levels December 11, 2015
+		Given a Binary Tree, return following value for it. 1) 
+		For every level, compute sum of all leaves if there are leaves at this level. 
+
+	Serialize and Deserialize an N-ary Tree October 25, 2014
+
+	Custom Tree Problem June 18, 2013
+	Succinct Encoding of Binary Tree October 25, 2015
+	Expression Tree August 13, 2015
+	Handshaking Lemma and Interesting Tree Properties April 14, 2015
+
+}
+
+void BST_EPI_BOOK()
+{
+
+}
+
+void BST_CTCI_BOOK()
+{
+
+}
+
+void BST_MadeEassy_BOOK()
+{
+
+}
+
+void BST_Do_FAQ()
+{
+
+}
+
+void BST_Theory_Notes()
+{
+	/*
+	Array traversal Notes:
+	
+		BFS : level <iterative: using Q, recusrive : fist calculate ht then traverse>
+		DFS: pre,post, in <Recursive & iterative <Stacks> or threade tree: morrish>
+		post: bottomUp: <child first> -> update the tree
+		Pre: topDown <parent fist>, normal search
+		In:Sorted order
+		Recursive & iterative
+		iterative
+	*/
+	
+	/*
+	Theory:
+	Applications of tree data structure February 7, 2011
+	BFS vs DFS for Binary Tree February 22, 2016	
+	Total number of possible Binary Search Trees with n different keys = Catalan number Cn = (2n)!/(n+1)!*n!	
+	How to handle duplicates in Binary Search Tree? May 11, 2015
+	Advantages of BST over Hash Table April 1, 2015
+	*/
+
+}
+
+struct node()
+{
+	int date;
+	struct node* left;
+	struct node* rigt;
+}
+
+

@@ -1,0 +1,29 @@
+
+void DO()
+{
+
+#Design Problem and Design pattern
+	1) DP
+	3) OOP Design 
+	4) System Design <Scalable>
+	5) concurancy & thread Problem & Pattern <EP, thread patthernI>
+
+#DS and Algo	
+	#Done:
+	
+	1) LL()
+	2) BST()
+	4) BitFun()
+	3) Array() <sort, search/find- org & unorg data, select>
+	
+	#DO:
+	
+	
+	
+	5) String
+	<Matrix>
+
+#Practice other
+		1)CPP Template
+		2) CPP idiames
+}

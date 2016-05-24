@@ -1,0 +1,356 @@
+
+# define NO_OF_CHARS 256
+ 
+int* createCharHash(char *str)
+{
+   int *charHash = (int *)calloc(NO_OF_CHARS, sizeof(int) );
+   
+   for (int i = 0; *(str+i);  i++)
+   {
+      charHash[*(str+i)]++;
+   }
+
+   return charHash;
+}
+
+
+void charHashProblem()
+{
+	void printMaxOccurringCharacter(char *str) //Max frequency character
+	void printAllDuplicatesCharacter((char *str)
+	void removeAllDuplicatesCharacter((char *str) //practice
+
+	//Remove characters from 1st str1 which are present in 2nd string<MaskString>
+	void removeCharacterStr1PresentsInMaskStr(char *str, char *maskStr)
+	
+	void findFirstNonRepeatingCharacter(char *str)
+	//Find the first non-repeating character from a stream of characters
+	void findFirstNonRepeatingCharacter_Stream(char *str)
+	
+	//check if first string is a subsequence of second
+	bool isSubsequence(char *isSubStr, char *srcStr)
+	
+	first/Last occurrence of character in string:	strrchr/strchr()
+	//1st Ocuurance <also Replace & Remove)
+
+	Print list items containing all characters of a given word (Sun/Sundry)
+
+	//using maxHeap
+	Rearrange a string so that all same characters become d distance away
+
+}
+
+
+void implStringMethods() //implements the string methods
+{
+	strlen(), strncat()/strcat(), strcmp()/strncmp(), strcpy()/strncpy()
+		
+	atoi(), atof()
+
+	//Split string into tokens
+	strtok() :char* strtok ( char * str, const char * delimiters )
+
+	//Locate substring
+	strstr() :char* strstr ( const char *, const char * ); 
+
+	isLower()/isUpper()/toUpper()/toLower()
+}
+
+
+void stringLogic1()
+{
+	//-> 2 index linera scan check/swap	
+	Reverse string using recursion/Iteration
+	check palindrom 
+	Reverse an array without affecting special characters
+	//some additional constrain
+
+	// linear scan and process
+	Reverse words in a given string
+	Count words in a given string
+	Count words,space, line  in a given file.
+
+	//5:
+	check rotations if two strings	are of each other
+
+	//linear scan and then proccess
+	Divide a string in N equal parts
+
+	Run Length Encoding-RLE
+	Find Excel column name from a given column number
+
+
+	//10:(2 index filter reader &  writer index)
+	Remove spaces from a given string
+	Remove “b” and “ac” from a given string
+
+}
+
+void stringLogic2()
+{
+	//1:
+	Check a given sentence for a given set of simple grammer rules
+
+	Check if two given strings are isomorphic to each other
+
+	Length of the longest valid substring
+
+
+	//5:
+	Check if edit distance between two strings is one
+
+	
+	Print Concatenation of Zig-Zag String in ‘n’ Rows
+
+	1’s and 2’s complement of a Binary Number
+		
+
+	Find if a given string can be represented from a substring by iterating the substring “n” times
+
+	Find maximum depth of nested parenthesis in a string
+
+	//10:
+	Function to find Number of customers who could not get a computer	
+
+	Find the longest substring with k unique characters in a given string
+
+	Check if a given sequence of moves for a robot is circular or not
+
+	Shortest Superstring Problem
+
+	Transform One String to Another using Minimum Number of Given Operation
+
+	//15:
+	Given a sorted dictionary of an alien language, find order of characters	
+
+}
+
+void stringLogicHard()
+{
+	Recursively remove all adjacent duplicates
+	
+	Find the smallest window in text containing all characters of pattern
+
+	Lexicographic rank of a string
+
+	
+	Longest Even Length Substring such that Sum of First and Second Half is same
+
+	Recursively print all sentences that can be formed from list of word lists
+}
+
+void permutations_anagram_combination()
+{
+	//1:
+	print all permutations of a given string
+	Print all permutations with repetition of characters
+
+	Check whether two strings are anagram of each other
+
+	Given a sequence of words, print all anagrams together | Set 1
+	Given a sequence of words, print all anagrams together | Set 2
+
+	//5:
+	Print all possible words from phone digits
+
+
+	Print all interleavings of given two strings
+	Check whether a given string is an interleaving of two other given strings
+
+}
+
+
+void LPS_longestPalindromicSubstring()
+{
+	Check if a given string is a rotation of a palindrome
+	
+	Longest Palindromic Substring | Set 1
+	Longest Palindromic Substring | Set 2
+
+	Print all palindrome permutations of a string
+	
+	Find all distinct palindromic sub-strings of a given string	
+	Online algorithm for checking palindrome in a stream
+	
+	Given a string, print all possible palindromic partitions
+
+	Manacher’s Algorithm – Linear Time Longest Palindromic Substring – Part 1/6
+	
+	LCS //Subsequence  & sub-strings 
+		Printing Longest Common Subsequence
+	
+}
+
+void PatternMatching() //search for the patten
+{
+	Naive Pattern Searching
+	KMP Algorithm
+	Rabin-Karp Algorithm
+	A Naive Pattern Searching Question
+
+	Finite Automata
+	Efficient Construction of Finite Automata
+	Boyer Moore Algorithm – Bad Character Heuristic
+
+	Suffix Array
+	Anagram Substring Search (Or Search for all permutations)
+	Pattern Searching using a Trie of all Suffixes
+
+	Regular Expression search
+	Wildcard characters search
+	String matching where one string contains wildcard characters
+	
+}
+
+
+
+void Trie_compressedTrie_SuffixTree_SuffixArray() //re-TriE-val
+{
+	Trie | (Insert and Search)
+	Trie | (Delete)
+
+	Pattern Searching using a Trie of all Suffixes
+	(Problem Statement: Given a text txt[0..n-1] and a pattern pat[0..m-1], 
+	write a function search(char pat[], char txt[]) that prints all occurrences of pat[] in txt[]
+	
+	Longest prefix matching – A Trie based solution in Java
+	Print unique rows in a given boolean matrix
+
+	How to Implement Reverse/Forward DNS Look Up Cache?
+
+	//SuffixTree
+		
+}
+
+
+void STR_ProblemSolving()
+{
+	1) Autocomplete
+	2) Max Frequency of words in files
+	3) implement grep with wilds chars
+	4) implement wc
+	5) Design and implement dictionary
+	6) Design and implement spell checker
+	7) Design and implement spell corrector
+	8) Design and implement Phone Address book
+}
+
+void STR_DynamicPrograming()
+{
+
+}
+
+void STR_EPI_BOOK()
+{
+
+}
+
+void STR_CTCI_BOOK()
+{
+
+}
+
+void STR_MadeEassy_BOOK()
+{
+
+}
+
+void STR_Do_FAQ()
+{
+
+}
+
+void STR_Theory_Notes()
+{
+}
+
+void LPS_ManacherAlgorithm_Part1_Part6() 
+{
+	Linear Time Longest Palindromic Substring – Part 1, Part 2, Part 3, Part 4
+		
+}
+
+void EUkkonenSuffixTree_Part1_Part6()
+{
+}
+
+void SuffixTreeApplication_6APPn()
+{
+	
+	#Suffix Tree Introduction
+			Suffix Tree Application 1 – Substring Check<Substring Check>
+			Suffix Tree Application 2 – Searching All Patterns<Searching All Patterns>
+			Suffix Tree Application 3 – Longest Repeated Substring<Longest Repeated Substring>
+			Suffix Tree Application 4 – Build Linear Time Suffix Array
+			Suffix Tree Application 5 – Longest Common Substring<LCS>
+			Suffix Tree Application 6 – Longest Palindromic Substring<LPS>
+}
+
+void SuffixArray_SuffixTree_Prefix()//SuffixTree: compressed trie
+{
+
+	in-place algo 4 String Transformation => “a1b2c3d4e5f6g7h8i9j1k2l3m4 -> “abcdefghijklm1234567891234?
+
+Suffix Array & Suffix Tree
+	Suffix Tree(it is a compressed trie for all suffixes of the given text)
+
+	Suffix Array Introduction
+	Suffix Array nLogn Algorithm
+
+	//Suffix Tree Application	
+	//#EUkkonen’s Suffix Tree Construction – Part 1,6
+
+	Build Linear Time Suffix Array using Suffix Tree
+	Generalized Suffix Tree
+
+
+#Suffix Tree
+	Applications of Suffix Tree
+		Suffix tree can be used for a wide range of problems. 
+		Following are some famous problems where Suffix Trees provide optimal time complexity solution.
+		1) Pattern Searching
+		2) Finding the longest repeated substring
+		3) Finding the longest common substring
+		4) Finding the longest palindrome in a string
+
+		Suffix Tree Application 1 – Substring Check
+		Suffix Tree Application 2 – Searching All Patterns
+		Suffix Tree Application 3 – Longest Repeated Substring
+		Suffix Tree Application 4 – Build Linear Time Suffix Array
+		Suffix Tree Application 5 – Longest Common Substring
+		Suffix Tree Application 6 – Longest Palindromic Substring
+
+		There are lots of other problems where multiple strings are involved.
+			e.g. pattern searching in a text file or dictionary, 
+				spell checker, 
+				phone book, 
+				Autocomplete, 
+				Longest common substring problem, 
+				Longest palindromic substring and More.
+
+	For such operations, all the involved strings need to be indexed for faster search and retrieval.
+		One way to do this is using suffix trie or suffix tree. We will discuss suffix tree here.
+		A suffix tree made of a set of strings is known as Generalized Suffix Tree.
+		We will discuss a simple way to build Generalized Suffix Tree here for two strings only.
+		Later, we will discuss another approach to build Generalized Suffix Tree for two or more strings.
+
+	suffix array
+		it is a sorted array of all suffixes of a given string. 
+		The definition is similar to Suffix Tree which is compressed trie of all suffixes of the given text.
+		Any suffix tree based algorithm can be replaced with an algorithm that uses a
+		suffix array enhanced with additional information and solves the same problem in the 
+		same time complexity (Source Wiki).
+
+		A suffix array can be constructed from Suffix tree by doing a DFS traversal of the suffix tree.
+
+		In fact Suffix array and suffix tree both can be constructed from each other in linear time.
+		Advantages of suffix arrays over suffix trees include improved space requirements, 
+		simpler linear time construction algorithms (e.g., compared to Ukkonen’s algorithm)
+		and improved cache locality (Source: Wiki)		
+}
+
+void LCS() //Subsequence  & sub-strings 
+{
+	Printing Longest Common Subsequence
+}
+
